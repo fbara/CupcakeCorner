@@ -80,10 +80,10 @@ struct ContentView : View {
                 }
                 
                 Section {
-                    TextField($order.name, placeholder: Text("Name"))
-                    TextField($order.streetAddress, placeholder: Text("Street Address"))
-                    TextField($order.city, placeholder: Text("City"))
-                    TextField($order.zip, placeholder: Text("Zip"))
+                    TextField("Name", text: $order.name)
+                    TextField("Street Address", text: $order.streetAddress)
+                    TextField("City", text: $order.city)
+                    TextField("Zip", text: $order.zip)
                 }
                 
                 Section {
